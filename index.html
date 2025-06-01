@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QMS Auto-Drafter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'qms-primary': '#3B82F6', // Blue-500
+              'qms-secondary': '#10B981', // Emerald-500
+              'qms-accent': '#F59E0B', // Amber-500
+              'qms-bg': '#F3F4F6', // Gray-100
+              'qms-text-primary': '#1F2937', // Gray-800
+              'qms-text-secondary': '#4B5563', // Gray-600
+            },
+            animation: {
+              'spin-slow': 'spin 1.5s linear infinite',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.3.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-qms-bg text-qms-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
+    

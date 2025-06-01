@@ -1,0 +1,5 @@
+{
+  "name": "QMS Auto-Drafter",
+  "description": "A dynamic web application to guide users through creating Quality Management System (QMS) documentation using a Q&A format, AI-assisted drafting via Gemini API, and web search capabilities.",
+  "requestFramePermissions": []
+}
